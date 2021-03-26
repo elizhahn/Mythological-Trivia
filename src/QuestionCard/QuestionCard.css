@@ -1,0 +1,22 @@
+.question-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content:center;  
+  box-shadow: 3px 3px 15px #888888,
+  -3px -3px 15px #888888; 
+  margin: 20px; 
+}
+
+.question {
+  padding: 10px; 
+  text-align: center; 
+}
+.answers {
+  align-self: center; 
+  list-style-type: none;
+}
+
+.answer-choice {
+ font-size: 1.4em;
+ padding-top: 10px;  
+}
