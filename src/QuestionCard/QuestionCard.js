@@ -2,19 +2,22 @@ import React, { Component } from "react";
 import "./QuestionCard.css";
 
 const QuestionCard = ({ questionInfo }) => {
-  const answers = questionInfo.answers.sort();
-  console.log(answers)
-  return (
-    <article className="question-container">
-        <h1 className="question">{questionInfo.currentQuestion}</h1>
-        <ul className="answers">
-          <li className="answer-choice">A: {answers[0]}</li> 
-          <li className="answer-choice">B: {answers[1]}</li> 
-          <li className="answer-choice">C: {answers[2]}</li> 
-          <li className="answer-choice">D: {answers[3]}</li> 
-         </ul>
-    </article>
-  )
+  if(Object.keys(questionInfo.answers).length === 0 ) {
+    return <h1>Loading...</h1>
+  } else {
+  
+    return (
+      <article className="question-container">
+          <h1 className="question">{questionInfo.currentQuestion}</h1>
+          <ul className="answers">
+            <li className="answer-choice">A: {questionInfo.answers["a"]}</li> 
+            <li className="answer-choice">B: {questionInfo.answers["b"]}</li> 
+            <li className="answer-choice">C: {questionInfo.answers["c"]}</li> 
+            <li className="answer-choice">D: {questionInfo.answers["d"]}</li> 
+           </ul>
+      </article>
+    )
+  }
 }
 
 export default QuestionCard; 
