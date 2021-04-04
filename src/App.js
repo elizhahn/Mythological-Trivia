@@ -24,7 +24,6 @@ componentDidMount() {
     .then(response => response.json())
     .then(data => {
      const triviaData = data.results;
-     console.log(triviaData)
      this.startGame(triviaData); 
     })
     .catch(error => console.log("error"))
@@ -46,7 +45,6 @@ generateNewQuestion = (index) => {
 }
 
 startGame = (triviaData) => {
-  console.log(triviaData)
   const questions = triviaData.map(triviaItem => {
     return triviaItem.question
   })
@@ -75,7 +73,6 @@ onSubmit = (answer) => {
 }
 
 render() { 
-  console.log(this.state)
   return (
     <>
      <Header/>

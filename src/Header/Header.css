@@ -5,14 +5,17 @@
 .header-color-bar {
   width: 100%; 
   height: 20px; 
-  background-color: rgb(64, 77, 66);
+  background-color: rgb(163, 242, 53);
 }
 
 .title {
   text-align: center; 
   color: #FFF; 
   margin: 0; 
-  padding: 15px; 
+  padding: 15px;
+  text-shadow: 3px 3px 4px rgb(146, 223, 157) , -6px -6px 4px  rgb(30, 36, 30) ;
+  letter-spacing: 20px; 
+  font-size: 2.3em; 
 }
 
 

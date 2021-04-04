@@ -10,10 +10,10 @@ const QuestionCard = ({ questionInfo }) => {
       <article className="question-container">
           <h1 className="question">{questionInfo.currentQuestion}</h1>
           <ul className="answers">
-            <li className="answer-choice">A: {questionInfo.answers["a"]}</li> 
-            <li className="answer-choice">B: {questionInfo.answers["b"]}</li> 
-            <li className="answer-choice">C: {questionInfo.answers["c"]}</li> 
-            <li className="answer-choice">D: {questionInfo.answers["d"]}</li> 
+            <li className="answer-choice"><span className="letter">A: </span>  {questionInfo.answers["a"]}</li> 
+            <li className="answer-choice"><span className="letter">B: </span>  {questionInfo.answers["b"]}</li> 
+            <li className="answer-choice"><span className="letter">C: </span>  {questionInfo.answers["c"]}</li> 
+            <li className="answer-choice"><span className="letter">D: </span>  {questionInfo.answers["d"]}</li> 
            </ul>
       </article>
     )

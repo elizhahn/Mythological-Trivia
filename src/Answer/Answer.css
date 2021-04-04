@@ -4,17 +4,21 @@
   padding: 30px; 
   margin: 10px 60px; 
   text-align: center; 
+  border-radius: 5px; 
 }
 
 .answer-input {
   margin: 0px 10px; 
+  height: 23px; 
+  font-size:.9em; 
 }
 
 .answer-button {
-  background-color: rgb(113, 242, 53);
+  background-color: rgb(163, 242, 53);
   border: none; 
   padding: 8px; 
   border-radius: 5px;
-  font-weight: 600; 
+  font-weight: 600;
+  font-size: 1em;  
 }
 
