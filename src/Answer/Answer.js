@@ -28,7 +28,6 @@ class Answer extends Component {
   }
 
   render() { 
-    console.log(this.state)
     return (
       <form className="answer-container" onSubmit={this.handleSubmit}>
          {this.state.invalid && <p>Please choose A, B, C, or D</p>}

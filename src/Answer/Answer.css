@@ -1,8 +1,8 @@
 .answer-container {
-  box-shadow: 3px 3px 15px #888888,
-  -3px -3px 15px #888888; 
+  box-shadow: 3px 3px 25px rgb(194, 238, 203),
+  -3px -3px 15px rgb(60, 70, 62); 
   padding: 30px; 
-  margin: 10px; 
+  margin: 10px 60px; 
   text-align: center; 
 }
 
